@@ -11289,8 +11289,8 @@ h5,
     bottom: 0;
     content: '';
     opacity: .5;
-    width: 50%;
-    background: #fcc46a;
+    width: 100%;
+    background: #000000;
 }
 
 .hero-wrap .text {
