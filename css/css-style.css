@@ -12671,7 +12671,7 @@ textarea.form-control {
 .contact-section .box .icon {
     width: 100px;
     height: 100px;
-    background: #ff0000;
+    background: #fcc46a;
     margin: 0 auto;
     margin-bottom: 10px;
     -webkit-border-radius: 50%;
@@ -12681,7 +12681,7 @@ textarea.form-control {
 }
 
 .contact-section .box .icon span {
-    color: #fff;
+    color: #000000;
     font-size: 30px;
 }
 
@@ -12706,7 +12706,7 @@ textarea.form-control {
 }
 
 .contact-section .contact-info p a {
-    color: #ff0000;
+    color: #fcc46a;
 }
 
 .contact-section .contact-form {
