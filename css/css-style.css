@@ -11301,12 +11301,12 @@ h5,
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 800;
-    color: #ff0000;
+    color: ##fcc46a;
     letter-spacing: 4px;
 }
 
 .slider-text h1 {
-    font-size: 60px;
+    font-size: 80px;
     font-weight: 800;
 }
 
@@ -11321,7 +11321,7 @@ h5,
 }
 
 .slider-text h2 span {
-    color: #ff0000;
+    color: ##fcc46a;
     text-decoration: underline;
 }
 
