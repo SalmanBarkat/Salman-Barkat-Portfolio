@@ -12,7 +12,7 @@
     --pink: #e83e8c;
     --red: #dc3545;
     --orange: #fd7e14;
-    --yellow: #fcc46a;
+    --yellow: #ffb915;
     --green: #28a745;
     --teal: #20c997;
     --cyan: #17a2b8;
@@ -11301,7 +11301,7 @@ h5,
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 800;
-    color: #fcc46a;
+    color: #ffb915;
     letter-spacing: 4px;
 }
 
@@ -11321,7 +11321,7 @@ h5,
 }
 
 .slider-text h2 span {
-    color: #fcc46a;
+    color: #ffb915;
     text-decoration: underline;
 }
 
@@ -11990,12 +11990,12 @@ h5,
     right: 0;
     bottom: 0;
     content: '';
-    background: #ff0000;
+    background: #ffb915;
     opacity: .7;
 }
 
 .ftco-hireme h2 {
-    color: #fff;
+    color: #000000;
     font-size: 40px;
     font-weight: 900;
 }
@@ -12671,7 +12671,7 @@ textarea.form-control {
 .contact-section .box .icon {
     width: 100px;
     height: 100px;
-    background: #fcc46a;
+    background: #ffb915;
     margin: 0 auto;
     margin-bottom: 10px;
     -webkit-border-radius: 50%;
@@ -12706,7 +12706,7 @@ textarea.form-control {
 }
 
 .contact-section .contact-info p a {
-    color: #fcc46a;
+    color: #ffb915;
 }
 
 .contact-section .contact-form {
