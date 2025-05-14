@@ -13068,3 +13068,16 @@ textarea.form-control {
         stroke-dashoffset: -136px;
     }
 }
+/* ===== CTA Button ===== */
+.cta-button {
+  background: #2563eb;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
