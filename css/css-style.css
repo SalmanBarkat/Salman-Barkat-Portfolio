@@ -13107,7 +13107,7 @@ textarea.form-control {
 
 .vertical-social a {
   color: #333;
-  font-size: 24px !important; /* Locked to original size */
+  font-size: 23px !important; /* Locked to original size */
   transition: transform 0.3s, color 0.3s !important;
 }
 
