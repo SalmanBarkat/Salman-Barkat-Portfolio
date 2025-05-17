@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+<!-- Dark Mode Toggle -->
+<button id="dark-mode-toggle" aria-label="Toggle dark mode">
+  <span class="toggle-icon">Dark</span> <!-- Default icon -->
+</button>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Muhammad Salman Barkat | A Creative Guy</title>
     <meta charset="utf-8">
@@ -63,11 +67,26 @@
   });
 </script>
 
-<!-- Dark Mode Toggle -->
-<button id="dark-mode-toggle" aria-label="Toggle dark mode">
-  <span class="toggle-icon">??</span> <!-- Default icon -->
-</button>
+<script>
+  const toggle = document.getElementById('dark-mode-toggle');
+  
+  toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    
+    // Save preference to localStorage
+    const isDark = document.body.classList.contains('dark-mode');
+    localStorage.setItem('darkMode', isDark);
+    
+    // Update icon
+    toggle.innerHTML = isDark ? 'Light' : 'Dark';
+  });
 
+  // Check for saved preference on load
+  if (localStorage.getItem('darkMode') === 'true') {
+    document.body.classList.add('dark-mode');
+    toggle.innerHTML = 'light';
+  }
+</script>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 

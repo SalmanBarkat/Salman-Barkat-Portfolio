@@ -5,19 +5,10 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
-
- :root {
-  --bg: #ffffff;
-  --text: #333333;
-  --secondary: #6c757d;
-}
-
-body {
-  background: var(--bg);
-  color: var(--text);
-  transition: background 0.5s ease, color 0.5s ease;
-}
 :root {
+    --bg: #ffffff;
+    --text: #333333;
+    --secondary: #6c757d;
     --blue: #007bff;
     --indigo: #6610f2;
     --purple: #6f42c1;
@@ -76,6 +67,9 @@ section {
 }
 
 body {
+    background: var(--bg);
+    color: var(--text);
+    transition: background 0.5s ease, color 0.5s ease;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 1rem;
