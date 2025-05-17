@@ -13092,34 +13092,30 @@ textarea.form-control {
   transform: translateY(-5px);
   color: #2563eb;
 }
-/* Vertical Social Icons */
+/* Vertical Social Icons - Fixed Position */
 .vertical-social {
   position: fixed;
   right: 20px;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%) !important; /* Force center alignment */
   display: flex;
   flex-direction: column;
   gap: 15px;
   z-index: 100;
+  transition: opacity 0.4s ease, transform 0.4s ease !important;
+  /* Original transform stays intact */
 }
 
-.vertical-social a {
-  color: #333;
-  font-size: 24px;
-  transition: transform 0.3s, color 0.3s;
+/* Scroll Classes */
+.scroll-down .vertical-social {
+  transform: translateY(-50%) translateX(100px) !important; /* Slide right */
+  opacity: 0;
 }
 
-.vertical-social a:hover {
-  transform: translateX(-5px);
-  color: #2563eb;
+.scroll-up .vertical-social {
+  transform: translateY(-50%) translateX(0) !important; /* Original position */
+  opacity: 1;
 }
-.vertical-social {
-  gap: 12px; /* Reduced from 15px for 5 icons */
-}
-
-.vertical-social a {
-  font-size: 22px; /* Slightly smaller for more icons */
 }
 /* Hide on scroll-down, show on scroll-up */
 .vertical-social {
