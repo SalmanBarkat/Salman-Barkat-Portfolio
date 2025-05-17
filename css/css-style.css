@@ -13081,3 +13081,14 @@ textarea.form-control {
   transform: translateY(-3px);
   box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
 }
+
+.social-links a {
+  color: #333;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+.social-links a:hover {
+  transform: translateY(-5px);
+  color: #2563eb;
+}
