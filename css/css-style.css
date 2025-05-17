@@ -13137,21 +13137,29 @@ textarea.form-control {
 @media (max-width: 768px) {
   .vertical-social { display: none; }
 }
-/* Footer Social Links */
+/* Footer Social Links - Larger Icons */
 .footer-social {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  margin-top: 20px;
+  gap: 25px; /* Increased from 20px */
+  margin: 30px 0; /* More vertical space */
 }
 
 .footer-social a {
   color: #333;
-  font-size: 23px; /* Matches your preferred size */
-  transition: transform 0.3s, color 0.3s;
+  font-size: 28px !important; /* Bigger icons (from 23px) */
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.2); /* Optional subtle bg */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-social a:hover {
-  transform: translateY(-3px);
-  color: #2563eb; /* Same blue as vertical icons */
+  transform: translateY(-5px) scale(1.1); /* More dramatic hover */
+  color: #2563eb;
+  background: rgba(37, 99, 235, 0.1); /* Light blue bg on hover */
 }
