@@ -13137,3 +13137,21 @@ textarea.form-control {
 @media (max-width: 768px) {
   .vertical-social { display: none; }
 }
+/* Footer Social Links */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.footer-social a {
+  color: #333;
+  font-size: 23px; /* Matches your preferred size */
+  transition: transform 0.3s, color 0.3s;
+}
+
+.footer-social a:hover {
+  transform: translateY(-3px);
+  color: #2563eb; /* Same blue as vertical icons */
+}
