@@ -13114,3 +13114,10 @@ textarea.form-control {
   transform: translateX(-5px);
   color: #2563eb;
 }
+.vertical-social {
+  gap: 12px; /* Reduced from 15px for 5 icons */
+}
+
+.vertical-social a {
+  font-size: 22px; /* Slightly smaller for more icons */
+}
