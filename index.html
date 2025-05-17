@@ -43,6 +43,26 @@
   <a href="https://www.artstation.com/m-salman-barkat" target="_blank" data-aos="fade-left" data-aos-delay="500"><i class="fab fa-artstation"></i></a>
 </div>
 
+<script>
+  let lastScroll = 0;
+  const socialIcons = document.querySelector('.vertical-social');
+  
+  window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset;
+    
+    if (currentScroll > lastScroll) {
+      // Scrolling DOWN
+      document.body.classList.add('scroll-down');
+      document.body.classList.remove('scroll-up');
+    } else {
+      // Scrolling UP
+      document.body.classList.add('scroll-up');
+      document.body.classList.remove('scroll-down');
+    }
+    lastScroll = currentScroll;
+  });
+</script>
+
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
 

@@ -13121,3 +13121,20 @@ textarea.form-control {
 .vertical-social a {
   font-size: 22px; /* Slightly smaller for more icons */
 }
+/* Hide on scroll-down, show on scroll-up */
+.vertical-social {
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.scroll-down .vertical-social {
+  transform: translateX(100px);
+  opacity: 0;
+}
+
+.scroll-up .vertical-social {
+  transform: translateX(0);
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  .vertical-social { display: none; }
+}
