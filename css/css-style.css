@@ -13219,3 +13219,5 @@ textarea.form-control {
   font-size: 14px;
   margin-top: 10px;
 }
+:root { --bg: #fff; --text: #333; }
+.dark-mode { --bg: #1a1a1a; --text: #f0f0f0; }
