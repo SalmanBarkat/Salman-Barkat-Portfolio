@@ -5,6 +5,18 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+
+ :root {
+  --bg: #ffffff;
+  --text: #333333;
+  --secondary: #6c757d;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.5s ease, color 0.5s ease;
+}
 :root {
     --blue: #007bff;
     --indigo: #6610f2;
@@ -13219,5 +13231,49 @@ textarea.form-control {
   font-size: 14px;
   margin-top: 10px;
 }
-:root { --bg: #fff; --text: #333; }
-.dark-mode { --bg: #1a1a1a; --text: #f0f0f0; }
+/* Dark Mode Toggle Button */
+#dark-mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.05);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+#dark-mode-toggle:hover {
+  background: rgba(0, 0, 0, 0.1);
+  transform: scale(1.1);
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  --bg: #1a1a1a;
+  --text: #f0f0f0;
+  --secondary: #777;
+}
+
+.dark-mode body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.dark-mode .hero {
+  background: #111 !important;
+}
+
+.dark-mode .project-card,
+.dark-mode .footer-social a {
+  background: #222 !important;
+  border-color: #333 !important;
+}
+
+.dark-mode #dark-mode-toggle {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
