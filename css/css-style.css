@@ -13097,25 +13097,28 @@ textarea.form-control {
   position: fixed;
   right: 20px;
   top: 50%;
-  transform: translateY(-50%) !important; /* Force center alignment */
+  transform: translateY(-50%) !important;
   display: flex;
   flex-direction: column;
   gap: 15px;
   z-index: 100;
   transition: opacity 0.4s ease, transform 0.4s ease !important;
-  /* Original transform stays intact */
 }
 
-/* Scroll Classes */
+.vertical-social a {
+  color: #333;
+  font-size: 24px !important; /* Locked to original size */
+  transition: transform 0.3s, color 0.3s !important;
+}
+
+/* Scroll effects */
 .scroll-down .vertical-social {
-  transform: translateY(-50%) translateX(100px) !important; /* Slide right */
+  transform: translateY(-50%) translateX(100px) !important;
   opacity: 0;
 }
-
 .scroll-up .vertical-social {
-  transform: translateY(-50%) translateX(0) !important; /* Original position */
+  transform: translateY(-50%) translateX(0) !important;
   opacity: 1;
-}
 }
 /* Hide on scroll-down, show on scroll-up */
 .vertical-social {
