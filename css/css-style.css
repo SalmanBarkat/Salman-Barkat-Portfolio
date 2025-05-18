@@ -13140,7 +13140,6 @@ textarea.form-control {
   transform: translateX(0);
   opacity: 1;
 }
-
 @media (max-width: 768px) {
   .vertical-social { display: none; }
 }
@@ -13227,7 +13226,6 @@ textarea.form-control {
   margin-top: 10px;
 <<<<<<< HEAD
 }
-
 #intro-video {
   text-align: center;
   margin: 2rem auto;
