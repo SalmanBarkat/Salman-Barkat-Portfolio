@@ -13226,30 +13226,3 @@ textarea.form-control {
   margin-top: 10px;
 <<<<<<< HEAD
 }
-/* Portfolio Selector Buttons */
-.portfolio-selector {
-  display: flex;
-  gap: 15px;
-  margin: 20px 0;
-  justify-content: center;
-}
-
-.portfolio-btn {
-  background: rgba(255, 255, 255, 0.1);
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  color: white;
-  padding: 12px 24px;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-weight: 600;
-}
-
-.portfolio-btn:hover {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.portfolio-btn.active {
-  background: #2563eb;
-  border-color: #2563eb;
-}

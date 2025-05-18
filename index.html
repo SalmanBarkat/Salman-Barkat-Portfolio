@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
 </button>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Muhammad Salman Barkat | A Creative Guy</title>
@@ -89,28 +90,6 @@
 
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-
-    </section>  <!-- End of Contact section (Line 91) -->
-
-<!-- ===== 3D Portfolio Section ===== -->
-<section id="3d-portfolio" class="portfolio-section">
-  <h2>3D Generalist Portfolio</h2>
-  <div class="project-grid">
-    <!-- Add your 3D projects here later -->
-    <p style="text-align: center;">3D projects will go here!</p>
-  </div>
-</section>
-
-<!-- ===== Video Portfolio Section ===== -->
-<section id="video-portfolio" class="portfolio-section" style="background: #f9fafb;">
-  <h2>Video Editor Portfolio</h2>
-  <div class="project-grid">
-    <!-- Add your video projects here later -->
-    <p style="text-align: center;">Video projects will go here!</p>
-  </div>
-</section>
-
-<footer>  <!-- Existing footer starts here (Line 92) -->
         <div class="container">
             <a class="navbar-brand" href="index.html"><span>S</span>alman Barkat</a>
             <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -130,18 +109,20 @@
             </div>
         </div>
     </nav>
-   <section class="hero-wrap">
-  <div class="hero-content">
-    <span class="subheading">Hey! I am</span>
-    <h1>M. Salman Barkat</h1>
-    
-    <!-- Add these buttons -->
-    <div class="portfolio-selector">
-      <button class="portfolio-btn active" data-portfolio="3d">3D Generalist</button>
-      <button class="portfolio-btn" data-portfolio="video">Video Editor</button>
+   <section class="hero-wrap js-fullheight" data-aos="fade-in" data-aos-duration="1500">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
+      <div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
+        <div class="text text-center">
+          <span class="subheading" data-aos="fade-down" data-aos-delay="300">Hey! I am</span>
+          <h1 data-aos="fade-up" data-aos-delay="500">M. Salman Barkat</h1>
+          <h2 data-aos="fade-up" data-aos-delay="700">I'm a
+            <span class="txt-rotate" data-period="2000" data-rotate='[ "3D Artist.", "Video Editor.", "Graphic Designer.", "Youtuber" ]'></span>
+          </h2>
+        </div>
+      </div>
     </div>
-    
-    <a href="#3d-portfolio" class="cta-button" id="portfolio-cta">View 3D Portfolio</a>
   </div>
 </section>
         
@@ -1222,28 +1203,6 @@ https://www.linkedin.com/in/muhammad-salman-barkat/" target="_blank"><span class
     duration: 800, // Animation duration (ms)
     easing: 'ease-in-out', // Smooth easing
     once: true // Animations play once
-  });
-</script>
-  const buttons = document.querySelectorAll('.portfolio-btn');
-  const cta = document.getElementById('portfolio-cta');
-
-  buttons.forEach(button => {
-    button.addEventListener('click', () => {
-      // Remove active class from all buttons
-      buttons.forEach(btn => btn.classList.remove('active'));
-      // Add active class to clicked button
-      button.classList.add('active');
-      
-      // Update CTA link/text
-      const portfolioType = button.dataset.portfolio;
-      if (portfolioType === '3d') {
-        cta.textContent = 'View 3D Portfolio';
-        cta.href = '#3d-portfolio';
-      } else {
-        cta.textContent = 'View Video Portfolio';
-        cta.href = '#video-portfolio';
-      }
-    });
   });
 </script>
 </body>
