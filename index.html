@@ -2,37 +2,40 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Muhammad Salman Barkat | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Muhammad Salman Barkat - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <header>
+    <div class="logo">Salman Barkat</div>
     <nav>
-      <h1 class="logo">Muhammad Salman Barkat</h1>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <section class="hero">
-    <h2>Creative Visual Storyteller</h2>
-    <p>Video Editor | 3D Artist | Motion Designer</p>
+    <h1>Hello, I'm Muhammad Salman Barkat</h1>
+    <p>A passionate Video Editor & 3D Artist based in Pakistan</p>
     <div class="portfolio-buttons">
-      <button onclick="openModal('modal-3d')">3D Portfolio</button>
-      <button onclick="openModal('modal-video')">Video Editing</button>
+      <button id="open3D">3D Portfolio</button>
+      <button id="openVideo">Video Editing</button>
     </div>
   </section>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>I’m Muhammad Salman Barkat, a passionate video editor and 3D artist with over 6 years of experience bringing stories to life.</p>
+    <p>
+      I am a creative professional with over 5 years of experience in video editing, motion graphics, and 3D modeling.
+      I've worked with clients globally and specialize in crafting impactful visual stories.
+    </p>
   </section>
 
   <section id="skills">
@@ -42,57 +45,58 @@
       <li>After Effects</li>
       <li>Photoshop</li>
       <li>Motion Graphics</li>
-      <li>Storyboarding</li>
       <li>Color Grading</li>
+      <li>Storyboarding</li>
+      <li>3D Modeling</li>
+      <li>Blender</li>
+      <li>Unity</li>
+      <li>English</li>
+      <li>Urdu</li>
+      <li>Punjabi</li>
+      <li>Chinese</li>
     </ul>
   </section>
 
-  <section id="portfolio">
-    <h2>Portfolio</h2>
-    <p>Click the buttons above to explore my work in video editing and 3D modeling.</p>
-  </section>
-
   <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:salman@example.com">salman@example.com</a></p>
-    <p>Location: Pakistan</p>
+    <h2>Contact</h2>
+    <p>
+      Interested in working together? Feel free to reach out via email or connect with me on social media.
+    </p>
   </section>
 
-  <!-- 3D Portfolio Modal -->
-  <div id="modal-3d" class="custom-modal">
+  <!-- 3D Modal -->
+  <div class="custom-modal" id="modal3D">
     <div class="modal-content">
-      <span class="close-modal" onclick="closeModal('modal-3d')">&times;</span>
-      <h2>3D Portfolio</h2>
-      <p>Showcase of my 3D models and animations.</p>
-      <!-- Placeholder for project items -->
+      <span class="close-modal" onclick="document.getElementById('modal3D').style.display='none'">&times;</span>
+      <h3>3D Portfolio</h3>
+      <p>Coming soon: Showcase of 3D modeling and animation projects.</p>
     </div>
   </div>
 
-  <!-- Video Editing Modal -->
-  <div id="modal-video" class="custom-modal">
+  <!-- Video Modal -->
+  <div class="custom-modal" id="modalVideo">
     <div class="modal-content">
-      <span class="close-modal" onclick="closeModal('modal-video')">&times;</span>
-      <h2>Video Editing Projects</h2>
-      <p>Highlighting motion graphics, video editing, and color grading work.</p>
-      <!-- Placeholder for video items -->
+      <span class="close-modal" onclick="document.getElementById('modalVideo').style.display='none'">&times;</span>
+      <h3>Video Editing Portfolio</h3>
+      <p>Coming soon: Reel and samples of video editing work.</p>
     </div>
   </div>
 
-  <!-- Scripts -->
   <script>
-    function openModal(id) {
-      document.getElementById(id).style.display = 'flex';
-    }
+    document.getElementById("open3D").addEventListener("click", () => {
+      document.getElementById("modal3D").style.display = "flex";
+    });
 
-    function closeModal(id) {
-      document.getElementById(id).style.display = 'none';
-    }
+    document.getElementById("openVideo").addEventListener("click", () => {
+      document.getElementById("modalVideo").style.display = "flex";
+    });
 
     window.onclick = function (event) {
-      const modals = document.querySelectorAll('.custom-modal');
-      modals.forEach(modal => {
+      const modals = ["modal3D", "modalVideo"];
+      modals.forEach(id => {
+        const modal = document.getElementById(id);
         if (event.target === modal) {
-          modal.style.display = 'none';
+          modal.style.display = "none";
         }
       });
     }
